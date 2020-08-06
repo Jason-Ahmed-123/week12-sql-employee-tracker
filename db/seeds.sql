@@ -13,48 +13,48 @@ VALUES
 
 
 INSERT INTO roles
-  (title, salary)
+  (title, salary, department_id)
 VALUES
-  ('CSR', 65000);
+  ('CSR', 65000, 1);
 INSERT INTO roles
-  (title, salary)
+  (title, salary, department_id)
 VALUES
-  ('SEC Production', 95000);
+  ('SEC Production', 95000, 2);
 INSERT INTO roles
-  (title, salary)
+  (title, salary, department_id)
 VALUES
-  ('Manager', 120000);
+  ('Manager', 120000, 3);
 INSERT INTO roles
-  (title, salary)
+  (title, salary, department_id)
 VALUES
-  ('Shift Lead', 95000);
+  ('Shift Lead', 95000, 4);
 
 
 INSERT INTO employee
-  (first_name, last_name)
+  (first_name, last_name, role_id, manager_id)
 VALUES
-  ('Tyrone', 'Jeffries');
+  ('Tyrone', 'Jeffries', 1, 3);
 INSERT INTO employee
-  (first_name, last_name)
+  (first_name, last_name, role_id, manager_id)
 VALUES
-  ('Tony', 'Manriques');
+  ('Tony', 'Manriques', 4, 3);
 INSERT INTO employee
-  (first_name, last_name)
+  (first_name, last_name, role_id, manager_id)
 VALUES
-  ('June', 'Reisner');
+  ('June', 'Reisner', 4, 3);
 INSERT INTO employee
-  (first_name, last_name)
+  (first_name, last_name, role_id, manager_id)
 VALUES
-  ('Zylphia', 'Stevens');
+  ('Zylphia', 'Stevens', 1, 3);
 INSERT INTO employee
-  (first_name, last_name)
+  (first_name, last_name, role_id, manager_id)
 VALUES
-  ('Steve', 'Peters');
+  ('Steve', 'Peters', 2, 3);
 INSERT INTO employee
-  (first_name, last_name)
+  (first_name, last_name, role_id, manager_id)
 VALUES
-  ('Ellen', 'Fitzgerald');
+  ('Ellen', 'Fitzgerald', 1, 3);
 INSERT INTO employee
-  (first_name, last_name)
+  (first_name, last_name, role_id, manager_id)
 VALUES
-  ('Summer', 'Carmichael');
+  ('Summer', 'Carmichael', 4, null);
